@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './style.css';
 
 type Todo = {
   readonly id: number;
@@ -112,6 +113,7 @@ export const App = () => {
   };
   return (
     <div>
+      <h1 className="text-3xl pre pre--line">TODO app for TWA.</h1>
       <select
         title="select-filter"
         defaultValue="all"
